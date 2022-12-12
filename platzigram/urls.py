@@ -27,6 +27,7 @@ from posts import views as post_views
 
 urlpatterns = [
     path('admin/', admin.site.urls),
+    
     path('hello-world/', local_views.hello_world),
     path('sorted/', local_views.sort_integers),
     path('hi/<str:name>/<int:age>', local_views.say_hi),
