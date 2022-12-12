@@ -6,3 +6,22 @@ phone_number
 profile_picture
 created
 modified
+
+correr el servidor
+python manage.py runserver
+
+
+hcer migraciones
+python manage.py makemigrations
+python manage.py migrate
+
+
+Crear un superusuario
+python manage.py createsuperuser
+
+va a pedir un username
+              email
+              contraseña 
+
+
+
