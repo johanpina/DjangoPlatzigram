@@ -1,0 +1,8 @@
+campos del perfil de usuario
+
+website
+biopgraphy
+phone_number
+profile_picture
+created
+modified
