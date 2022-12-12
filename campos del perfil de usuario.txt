@@ -24,4 +24,11 @@ va a pedir un username
               contraseña 
 
 
+Cuando editamos el modelo de post debemos volver a hacer las migraciones:
+python manage.py makemigrations
+python manage.py migrate
+
+para visualizar el cambio en la base de datos lo podemos ver con algun gestor en este caso 
+se está utilizando DB browser
+
 
