@@ -1,5 +1,5 @@
 from django.shortcuts import render
-
+from django.contrib.auth.decorators import login_required
 
 # Create your views here.
 
@@ -36,7 +36,7 @@ posts = [
     }
 ]
 
-
+@login_required
 def list_posts(request):
     """list Existing posts"""
     return render(request,'posts/feed.html',{'posts':posts})
