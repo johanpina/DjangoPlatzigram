@@ -1,10 +1,11 @@
-from django.contrib.auth import authenticate, login
+from django.contrib.auth import authenticate, login, logout
+from django.contrib.auth.decorators import login_required
 from django.shortcuts import render, redirect
 
 
 def login_view(request):
     if request.method == 'POST':
-        print('*'*10) 
+        
         username = request.POST['username']
         password = request.POST['password']
         user = authenticate(request, username=username, password=password)
@@ -16,3 +17,8 @@ def login_view(request):
 
 
     return render(request, 'users/login.html')
+
+@login_required
+def logout_view(request):
+    logout(request)
+    return redirect('login')
